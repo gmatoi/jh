@@ -12,11 +12,11 @@ const NEZHA_PORT = process.env.NEZHA_PORT || "43644";// 为{443,8443,2096,2087,2
 
 const NEZHA_KEY = process.env.NEZHA_KEY || "P0YCeZhEtMbNn2LfbM"; 
 
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || "rep.gibaoxi.cloudns.biz"; 
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || "nxn.yyb.dedyn.io"; 
 
 const ARGO_AUTH =
   process.env.ARGO_AUTH ||
-"eyJhIjoiNjRmYzMyMmEwY2JlNWExYTY2OGQ4NjMyZDE3MzlmNjkiLCJ0IjoiMzJkYmY5ZWMtZDI1ZC00ZThjLWJhZWMtOGVhMWRjMTgzMGU1IiwicyI6Ik1tVmhaakF4TVRJdE9ETTJZeTAwWkdSbExXSXdOakV0WlRBellXWTVPR1JsWTJJMSJ9"; 
+"eyJhIjoiNjRmYzMyMmEwY2JlNWExYTY2OGQ4NjMyZDE3MzlmNjkiLCJ0IjoiYTNmMTVkNmMtZTcwNC00ZDQ0LTk3NGYtNWQxNjBmMjNmNTgxIiwicyI6IlltWXpZVE16TWpJdE1qTTBaQzAwTkRKbExUZzFNV1l0TUdKak16bGxNMkprTVRJeSJ9"; 
 
 const CFIP = process.env.CFIP || "yx.yyb.dedyn.io"; 
 
