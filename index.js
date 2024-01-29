@@ -1,6 +1,6 @@
 const FILE_PATH = process.env.FILE_PATH || "./temp";  
 
-const projectPageURL = process.env.URL || "banbu1-rjotsxhl.b4a.run";
+const projectPageURL = process.env.URL || "yyb11-tox9w6as.b4a.run";
 
 const intervalInseconds = process.env.TIME || 300; 
 
