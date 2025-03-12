@@ -1,0 +1,30 @@
+const express = require('express');
+const { exec } = require('child_process');
+const app = express();
+const port = process.env.PORT || 3000;
+
+// 下载并运行 Alist
+app.get('/', (req, res) => {
+  res.send('Deploying Alist on Back4App...');
+});
+
+// 启动 Alist 服务
+app.get('/start-alist', (req, res) => {
+  exec('./alist server', (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error: ${error.message}`);
+      return res.status(500).send('Failed to start Alist');
+    }
+    if (stderr) {
+      console.error(`Stderr: ${stderr}`);
+      return res.status(500).send('Failed to start Alist');
+    }
+    console.log(`Stdout: ${stdout}`);
+    res.send('Alist started successfully');
+  });
+});
+
+// 启动 Express 服务器
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
